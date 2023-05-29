@@ -17,9 +17,26 @@ Programy ktere byly vyuzity pro tvorbu teto sluzby:
     - diky nemu je mozne spustit vice webovych stranek bez toho aby se vzajemne rusily
     - take na nem bezi reverse proxy
 
-### Instalace
+## Instalace
 
-Nginx a Docker jsou momentalne k instalaci skrz libovolneho spravce balicku.
+Zezacatku musime naklonovat cely repozitar na system
+`git clone https://github.com/Terssuss/Webhosting`
+Pokud by certifikaty delaly problem, mozna bude potreba zmenit opravneni.
+`chmod 700 *certifikat*`
+
+Dale budeme potrebovat Nginx a Docker, kteri jsou momentalne k instalaci skrz libovolneho spravce balicku.
 Takze muzeme pouzit nasledujici prikaz na operacnim systemu Ubuntu:
-
 `sudo apt install nginx docker docker.io`
+
+
+### Reverse-proxy
+    
+Reverse proxy musime vytvorit manualne (nevim jak to dat na dockerhub), toho docilime vytvoreni docker image:
+```
+cd REVERSE-PROXY
+sudo docker build -t *nazev_image* .
+```
+## Konfigurace
+
+Dulezita je konfigurace jednotlivych prvku webhostingu.
+Konfigurace je mozna zmenou souboru v REVERSE-PROXY adresari.
