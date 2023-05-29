@@ -21,3 +21,5 @@ Programy ktere byly vyuzity pro tvorbu teto sluzby:
 
 Nginx a Docker jsou momentalne k instalaci skrz libovolneho spravce balicku.
 Takze muzeme pouzit nasledujici prikaz na operacnim systemu Ubuntu:
+
+`sudo apt install nginx docker docker.io`
