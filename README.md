@@ -43,4 +43,4 @@ Konfigurace je mozna zmenou souboru v REVERSE-PROXY adresari.
 
 ## Schema 
 
-![schema]('Webhosting scheme.jpg')
+![schema](scheme.jpg)
