@@ -40,3 +40,7 @@ sudo docker build -t *nazev_image* .
 
 Dulezita je konfigurace jednotlivych prvku webhostingu.
 Konfigurace je mozna zmenou souboru v REVERSE-PROXY adresari.
+
+## Schema 
+
+![schema]('Webhosting scheme.jpg')
